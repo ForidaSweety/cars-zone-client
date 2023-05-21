@@ -1,0 +1,63 @@
+[
+    {
+        "_id":"1",
+        "name":"Red car",
+        "price":20,
+        "ratings":"4 star",
+        "saller":"Amazon",
+        "sub_category":"Cars",
+        "quantity":190,
+        "description":" This car is a miniature marvel that captures attention with its vibrant and bold color. Its sleek design and glossy finish make it visually appealing, while its compact size allows for easy maneuverability. With its wheels ready to roll, this red toy car sparks imaginative adventures, taking young minds on exciting journeys across imaginary landscapes and leaving a trail of joyful memories behind."
+    },
+    {
+        "_id":"2",
+        "name":"Yellow car",
+        "price":50,
+        "ratings":"3 star",
+        "saller":"Zoho",
+        "sub_category":"Cars",
+        "quantity":140,
+        "description":" This car is a perfect combination of style and speed. Its aerodynamic design and striking color make it stand out from the rest. With its sturdy construction and smooth wheels, this toy car guarantees hours of thrilling playtime, fueling the imagination of young drivers as they zoom through their imaginary race tracks and conquer new adventures."
+    },
+    {
+        "_id":"3",
+        "name":"Black hanter",
+        "price":30,
+        "ratings":"5 star",
+        "saller":"Walmart",
+        "sub_category":"Bike",
+        "quantity":90,
+        "description":" This bike is every little rider's dream come true! Its charming color and adorable design make it a delightful choice for young cyclists. With its adjustable seat height, training wheels for stability, and cute basket in the front, this toy bike brings joy and imagination to every adventure. Get ready to pedal away and create wonderful memories with this lovely"
+    },
+    {
+        "_id":"4",
+        "name":"Blue bike",
+        "price":90,
+        "ratings":"3 star",
+        "saller":"Alibaba",
+        "sub_category":"Bike",
+        "quantity":400,
+        "description":"Get ready for a fun ride with this green bike! Its vibrant color and sporty design make it an ideal choice for adventurous kids. With its sturdy frame, comfortable seat, and easy-grip handles, this toy bike ensures an enjoyable and safe biking experience. Let the pedals spin and embark on exciting outdoor escapades with this fantastic green bike."
+    },
+    {
+        "_id":"5",
+        "name":"Excavator",
+        "price":80,
+        "ratings":"4 star",
+        "saller":"Daraz",
+        "sub_category":"Truck",
+        "quantity":200,
+        "description":" This truck is a powerhouse of playtime fun! With its rugged design, realistic details, and vibrant color, it's perfect for young truck enthusiasts. Load up the cargo bed, roll through rough terrains, and let the imagination run wild with endless transportation missions. Whether it's hauling goods or embarking on exciting rescue missions, this toy truck is ready for any adventure."
+    },
+    {
+        "_id":"6",
+        "name":"Dump truck",
+        "price":102,
+        "ratings":"5 star",
+        "saller":"Amazon",
+        "sub_category":"Truck",
+        "quantity":100,
+        "description":" Get ready for some heavy-duty action with this orange truck! With its robust construction, large wheels, and striking orange color, it's a must-have for young truck lovers. This toy truck is designed to handle any obstacle with ease, inspiring thrilling construction projects and imaginative journeys through rugged terrains. Unleash the power of play and let the adventures begin with this fantastic orange truck."
+    }
+
+]

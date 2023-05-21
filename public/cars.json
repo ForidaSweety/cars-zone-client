@@ -1,0 +1,24 @@
+[
+    {
+        "_id":"1",
+        "name":"Red car",
+        "imag":"https://ibb.co/jhhgrqg",
+        "price":20,
+        "ratings":"4 star",
+        "saller":"Amazon",
+        "sub_category":"Cars",
+        "quantity":190,
+        "description":" This car is a miniature marvel that captures attention with its vibrant and bold color. Its sleek design and glossy finish make it visually appealing, while its compact size allows for easy maneuverability. With its wheels ready to roll, this red toy car sparks imaginative adventures, taking young minds on exciting journeys across imaginary landscapes and leaving a trail of joyful memories behind."
+    },
+    {
+        "_id":"2",
+        "name":"Yellow car",
+        "imag":"https://ibb.co/h8CPJYp",
+        "price":50,
+        "ratings":"3 star",
+        "saller":"Zoho",
+        "sub_category":"Cars",
+        "quantity":140,
+        "description":" This car is a perfect combination of style and speed. Its aerodynamic design and striking color make it stand out from the rest. With its sturdy construction and smooth wheels, this toy car guarantees hours of thrilling playtime, fueling the imagination of young drivers as they zoom through their imaginary race tracks and conquer new adventures."
+    }
+]

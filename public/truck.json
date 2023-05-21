@@ -1,0 +1,24 @@
+[
+    {
+        "_id":"5",
+        "name":"Excavator",
+        "imag":"https://ibb.co/dpDmNBK",
+        "price":80,
+        "ratings":"4 star",
+        "saller":"Daraz",
+        "sub_category":"Truck",
+        "quantity":200,
+        "description":" This truck is a powerhouse of playtime fun! With its rugged design, realistic details, and vibrant color, it's perfect for young truck enthusiasts. Load up the cargo bed, roll through rough terrains, and let the imagination run wild with endless transportation missions. Whether it's hauling goods or embarking on exciting rescue missions, this toy truck is ready for any adventure."
+    },
+    {
+        "_id":"6",
+        "name":"Dump truck",
+        "imag":"https://ibb.co/BfPMnvV",
+        "price":102,
+        "ratings":"5 star",
+        "saller":"Amazon",
+        "sub_category":"Truck",
+        "quantity":100,
+        "description":" Get ready for some heavy-duty action with this orange truck! With its robust construction, large wheels, and striking orange color, it's a must-have for young truck lovers. This toy truck is designed to handle any obstacle with ease, inspiring thrilling construction projects and imaginative journeys through rugged terrains. Unleash the power of play and let the adventures begin with this fantastic orange truck."
+    }
+]
