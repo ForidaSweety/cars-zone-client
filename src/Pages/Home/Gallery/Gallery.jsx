@@ -10,82 +10,88 @@ import imge9 from "../../../assets/image/bike1.jpg"
 import imge10 from "../../../assets/image/bike2.jpg"
 import imge11 from "../../../assets/image/truck1.jpg"
 import imge12 from "../../../assets/image/truck2.jpg"
+import Aos from "aos"
+import { useEffect } from "react"
+import 'aos/dist/aos.css'
 
 const Gallery = () => {
+    useEffect(()=>{
+        Aos.init();
+    })
     return (
         <div className="mt-20">
             <h1 className="text-6xl font-semibold text-center text-orange-700 mb-10 ">Cars Collection</h1>
             <div className="grid sm:grid-cols-1 md:grid-cols-4 h-38 w-38 gap-2">
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge1} /></div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge1} className="h-52" /></div>
                     <div className="card-body">
                         <h2 className="card-title">Red Car</h2>
                     </div>
                 </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge2} /></div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge2} className="h-52 w-full" /></div>
+                    <div className="card-body">
+                        <h2 className="card-title">Racing Car</h2>
+                    </div>
+                </div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge3} className="h-52 w-full"/></div>
+                    <div className="card-body">
+                        <h2 className="card-title">Blue Car</h2>
+                    </div>
+                </div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge4} className="h-52 w-full" /></div>
                     <div className="card-body">
                         <h2 className="card-title">Red Car</h2>
                     </div>
                 </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge3} /></div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge5} className="h-52 w-full"/></div>
                     <div className="card-body">
-                        <h2 className="card-title">Red Car</h2>
+                        <h2 className="card-title">Yellow Car</h2>
                     </div>
                 </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge4} /></div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge6} className="h-52 w-full" /></div>
                     <div className="card-body">
-                        <h2 className="card-title">Red Car</h2>
+                        <h2 className="card-title">Sports Car</h2>
                     </div>
                 </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge5} /></div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge7} className="h-52 w-full"/></div>
                     <div className="card-body">
-                        <h2 className="card-title">Red Car</h2>
+                        <h2 className="card-title">Purple Remote Car</h2>
                     </div>
                 </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge6} /></div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge8} className="h-52 w-full" /></div>
                     <div className="card-body">
-                        <h2 className="card-title">Red Car</h2>
+                        <h2 className="card-title"> Car</h2>
                     </div>
                 </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge7} /></div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge9} className="h-52 w-full"/></div>
                     <div className="card-body">
-                        <h2 className="card-title">Red Car</h2>
+                        <h2 className="card-title">Black hunter</h2>
                     </div>
                 </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge8} /></div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge10} className="h-52 w-full"/></div>
                     <div className="card-body">
-                        <h2 className="card-title">Red Car</h2>
+                        <h2 className="card-title">Blue Bike</h2>
                     </div>
                 </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge9} /></div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge11} className="h-52 w-full"/></div>
                     <div className="card-body">
-                        <h2 className="card-title">Red Car</h2>
+                        <h2 className="card-title"> Excavator</h2>
                     </div>
                 </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge10} /></div>
+                <div className="card card-compact w-full bg-base-100 shadow-xl" data-aos ="flip-down">
+                    <div><img src={imge12} className="h-52 w-full"/></div>
                     <div className="card-body">
-                        <h2 className="card-title">Red Car</h2>
-                    </div>
-                </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge11} /></div>
-                    <div className="card-body">
-                        <h2 className="card-title">Red Car</h2>
-                    </div>
-                </div>
-                <div className="card card-compact w-full bg-base-100 shadow-xl">
-                    <div><img src={imge12} /></div>
-                    <div className="card-body">
-                        <h2 className="card-title">Red Car</h2>
+                        <h2 className="card-title">Drump Truck</h2>
                     </div>
                 </div>
             </div>

@@ -3,13 +3,21 @@ import person2 from "../../../assets/image/person2.jpg"
 import person3 from "../../../assets/image/person3.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
+import Aos from "aos"
+import { useEffect } from "react"
+import 'aos/dist/aos.css' 
 
 const Reviews = () => {
+
+   useEffect(()=>{
+       Aos.init({duration: 1500});
+   })
+
     return (
-        <div>
+        <div className="mb-20">
             <h1 className="text-6xl font-semibold text-center text-orange-700 mb-10 ">Reviews</h1>
             <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-10 ml-20 p-10">
-                <div className="card w-75 bg-base-100 items-center text-center shadow-xl" >
+                <div className="card w-75 bg-base-100 items-center text-center shadow-xl p-6" data-aos ="fade-right" >
 
                     <div className="m-3 flex">
                         <img className="h-10 w-10 rounded-full mr-4" src= {person1} />
@@ -27,7 +35,7 @@ const Reviews = () => {
                     </p>
 
                 </div>
-                <div className="card w-75 bg-base-100 items-center text-center shadow-xl">
+                <div className="card w-75 bg-base-100 items-center text-center shadow-xl p-6" data-aos ="fade-down">
 
                     <div className="m-3 flex">
                         <img className="h-10 w-10 rounded-full mr-4" src={person2} />
@@ -45,7 +53,7 @@ const Reviews = () => {
                     </p>
 
                 </div>
-                <div className="card w-75 bg-base-100 items-center text-center shadow-xl">
+                <div className="card w-75 bg-base-100 items-center text-center shadow-xl p-6" data-aos ="fade-up">
 
                     <div className="m-3 flex">
                         <img className="h-10 w-10 rounded-full mr-4" src={person3} />

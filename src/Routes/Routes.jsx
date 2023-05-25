@@ -13,6 +13,12 @@ import AddToy from "../Pages/AddToy/AddToy";
 import PrivateRoute from "./PrivateRoute";
 import PageNoteFound from "../Pages/PageNoteFound/PageNoteFound";
 
+import Detail from "../Pages/Detail/Detail";
+
+import SingleToy from "../Pages/SingleToy/SingleToy";
+import Update from "../Pages/Update/Update";
+
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -30,6 +36,11 @@ const router = createBrowserRouter([
             {
                 path: 'alltoys',
                 element: <AllToys></AllToys>
+            },
+            {
+                path: 'mytoy',
+                element: <PrivateRoute><SingleToy></SingleToy></PrivateRoute>
+
             },
             {
                 path: 'login',
@@ -60,26 +71,23 @@ const router = createBrowserRouter([
                 loader: ({ params }) => fetch(`http://localhost:5005/carsinfo/${params.id}`)
 
             },
-            // {
-            //     path: '/carsinfo',
-            //     element: <AllDetails></AllDetails>
+            
+            {
+                path: 'singletoy/:id',
+                element: <PrivateRoute><Detail></Detail></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5005/carsinfo/${params.id}`)
 
-            // },
+            },
             {
                 path: 'addtoy',
-                element: <AddToy></AddToy>
+                element: <PrivateRoute><AddToy></AddToy></PrivateRoute>
+            },
+            {
+                path:'update/:id',
+                element:<Update></Update>,
+                loader:({ params }) => fetch(`http://localhost:5005/carsinfo/${params.id}`)
             }
-
-
-            //allToys theke jokhon details e click korbo seta private route hobe 
-
-
-            // {
-            //     path:'/carsinfo/:id',
-            //     element:<AllCarsDetail></AllCarsDetail>,
-            //     loader: ({params}) => fetch (`http://localhost:5005/trucks/${params.id}`)
-
-            // }
+            
         ]
     },
 ]);

@@ -14,10 +14,12 @@ const AddToy = () => {
         const price = form.price.value;
         const description = form.description.value;
         const image = form.image.value;
-        const category = form.category.value;
+        const ratings = form.ratings.value;
+        const sub_category = form.sub_category.value;
         const email = user?.email;
+    
 
-        const newToys = { name, quantity, saller, price, description, image,category,email }
+        const newToys = { name, quantity, saller, price, description,ratings, image,sub_category,email }
         //console.log(newToys);
 
         //send data to the server
@@ -61,14 +63,14 @@ const AddToy = () => {
                         </label>
                     </div>
                 </div>
-                {/* form (saller, Price)*/}
+                {/* form (saller, email)*/}
                 <div className="md:flex mb-6">
                     <div className="form-control md:w-1/2">
                         <label className="label">
                             <span className="label-text">Saller</span>
                         </label>
                         <label className="input-group input-group-vertical">
-                            <input type="text" name="saller" className="input input-bordered w-full" />
+                            <input type="text" name="saller" defaultValue={user?.saller}  className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-5">
@@ -80,14 +82,14 @@ const AddToy = () => {
                         </label>
                     </div>
                 </div>
-                {/* form(description,price) */}
+                {/* form (ratingss,price)*/}
                 <div className="md:flex mb-6">
                     <div className="form-control md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Description</span>
+                            <span className="label-text">Ratings</span>
                         </label>
                         <label className="input-group input-group-vertical">
-                            <input type="text" name="description" className="input input-bordered w-full" />
+                            <input type="text" name="ratings" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-5">
@@ -99,6 +101,7 @@ const AddToy = () => {
                         </label>
                     </div>
                 </div>
+              
                 <div className="md:flex mb-6">
                     <div className="form-control md:w-1/2 ">
                         <label className="label">
@@ -113,9 +116,23 @@ const AddToy = () => {
                             <span className="label-text">Sub-category </span>
                         </label>
                         <label className="input-group input-group-vertical">
-                            <input type="text" name="category" className="input input-bordered w-full" />
+                            <input type="text" name="sub_category" className="input input-bordered w-full" />
                         </label>
                     </div>
+                </div>
+               
+                      {/* form(description,price) */}
+                <div className="mb-6">
+                    <div className="form-control md:w-full">
+                        <label className="label">
+                            <span className="label-text">Description</span>
+                        </label>
+                        <label className="input-group input-group-vertical">
+                            <input type="text" name="description" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                  
+               
                 </div>
 
                 <input type="submit" className="btn btn-block mb-20" value="Add new toy" />

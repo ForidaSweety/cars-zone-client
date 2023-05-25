@@ -5,7 +5,7 @@ const Bike = ({toyss}) => {
     return (
         <div>
         <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-5 ml-20 p-10'>
-   <div className="card w-96 bg-base-100 shadow-xl">
+   <div className="card w-96 bg-base-100 shadow-xl p-16">
    <figure className="px-10 pt-10">
        <img src={imag} className="rounded-xl" />
      </figure>

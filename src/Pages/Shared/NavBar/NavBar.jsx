@@ -5,8 +5,10 @@ import { useContext } from "react";
 import img from '../../../assets/image/person1.jpg'
 
 const NavBar = () => {
+    
     const { user, logOut } = useContext(AuthContext);
     const handleLogOut = () => {
+        
         logOut()
             .then(() => {
 
@@ -18,8 +20,10 @@ const NavBar = () => {
         <li><Link to="/">Home</Link> </li>
         <li> <Link to="/alltoys">All Toys</Link> </li>
         <li> <Link to="/blogs">Blogs</Link> </li>
-        {user?.email ? <>
+        <li><Link to="/mytoy">My Toy</Link></li>
             <li><Link to="/addtoy">Add Toy</Link></li>
+        {user?.email ? <>
+            
             <li><button onClick={handleLogOut}>Log out</button></li>
            <img className="h-10 w-10 rounded-full mr-4" src={img} />
         </>

@@ -1,15 +1,27 @@
-import { useContext } from "react";
-import { AuthContext } from "../provider/AuthProvider";
-import { Navigate, useLocation } from "react-router-dom";
 
-const PrivateRoute = ({children}) => {
-    const { user} = useContext(AuthContext);
-    const location = useLocation();
-    
-    if (user?.email) {
-        return children;
+import { useContext } from 'react';
+import { AuthContext } from '../../../provider/AuthProvider';
+
+const SocialLogin = () => {
+    const { googleSignIn } = useContext(AuthContext);
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => console.log(error))
     }
-    return <Navigate to="/login" state={{from:location}} replace></Navigate>;
+    return (
+        <div>
+            <div className="divider">OR</div>
+            <div className="text-center">
+                <button onClick={handleGoogleSignIn} className="btn btn-info btn-outline">
+                    Google
+                </button>
+                
+        </div>
+        </div>
+    );
 };
 
-export default PrivateRoute;
+export default SocialLogin;
