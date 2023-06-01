@@ -10,14 +10,14 @@ const AllToys = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5005/carsInfo')
+        fetch('https://cars-toy-server.vercel.app/carsInfo')
             .then(res => res.json())
             .then(data => setToyscard(data));
     }, [])
 
 
     const handleToySrchBtn = () => {
-        fetch(`http://localhost:5005/toysearch/${searchToys}`)
+        fetch(`https://cars-toy-server.vercel.app/toysearch/${searchToys}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);

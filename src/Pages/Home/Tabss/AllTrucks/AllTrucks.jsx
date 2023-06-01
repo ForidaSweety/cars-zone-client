@@ -5,7 +5,7 @@ const AllTrucks = () => {
 
     const [toyscard, setToyscard] =useState([]);
     useEffect(() =>{
-        fetch('http://localhost:5005/trucks')
+        fetch('https://cars-toy-server.vercel.app/trucks')
             .then(res => res.json())
             .then(data => setToyscard(data));
     },[])

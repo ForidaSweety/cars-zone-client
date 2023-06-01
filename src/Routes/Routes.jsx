@@ -53,29 +53,29 @@ const router = createBrowserRouter([
             {
                 path: 'carsdetails/:id',
                 element: <PrivateRoute><CarDetails></CarDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5005/cars/${params.id}`)
+                loader: ({ params }) => fetch(`https://cars-toy-server.vercel.app/cars/${params.id}`)
             },
             {
                 path: '/bikedetails/:id',
                 element: <PrivateRoute><BikeDetails></BikeDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5005/bikes/${params.id}`)
+                loader: ({ params }) => fetch(`https://cars-toy-server.vercel.app/bikes/${params.id}`)
             },
             {
                 path: '/truckdetails/:id',
                 element: <PrivateRoute><TruckDetails></TruckDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5005/trucks/${params.id}`)
+                loader: ({ params }) => fetch(`https://cars-toy-server.vercel.app/trucks/${params.id}`)
             },
             {
                 path: '/carsInfo/:id',
                 element: <AllToyCard></AllToyCard>,
-                loader: ({ params }) => fetch(`http://localhost:5005/carsinfo/${params.id}`)
+                loader: ({ params }) => fetch(`https://cars-toy-server.vercel.app/carsinfo/${params.id}`)
 
             },
             
             {
                 path: 'singletoy/:id',
                 element: <PrivateRoute><Detail></Detail></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5005/carsinfo/${params.id}`)
+                loader: ({ params }) => fetch(`https://cars-toy-server.vercel.app/carsinfo/${params.id}`)
 
             },
             {
@@ -85,7 +85,7 @@ const router = createBrowserRouter([
             {
                 path:'update/:id',
                 element:<Update></Update>,
-                loader:({ params }) => fetch(`http://localhost:5005/carsinfo/${params.id}`)
+                loader:({ params }) => fetch(`https://cars-toy-server.vercel.app/carsinfo/${params.id}`)
             }
             
         ]

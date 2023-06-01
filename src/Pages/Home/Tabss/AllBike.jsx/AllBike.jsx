@@ -4,7 +4,7 @@ import Bike from "../Bike";
 const AllBike = () => {
     const [toysscard, setToysscard] =useState([]);
     useEffect(() =>{
-        fetch('http://localhost:5005/bikes')
+        fetch('https://cars-toy-server.vercel.app/bikes')
             .then(res => res.json())
             .then(data => setToysscard(data));
     },[])

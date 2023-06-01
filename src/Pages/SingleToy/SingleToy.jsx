@@ -7,14 +7,14 @@ const SingleToy = () => {
     const [singletoy, setSingletoy] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5005/carsInfo')
+        fetch('https://cars-toy-server.vercel.app/carsInfo')
             .then(res => res.json())
             .then(data => setSingletoy(data));
     }, [])
     const handleDelete = id => {
         const proceed = confirm('You want to delete!?');
         if (proceed) {
-            fetch(`http://localhost:5005/toysearch/${id}`, {
+            fetch(`https://cars-toy-server.vercel.app/toysearch/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
